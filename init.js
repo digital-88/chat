@@ -39,7 +39,7 @@
         } else {
             url = url_full.substr(0, url_full.lastIndexOf('init.min.js') - 8);
         }
-        xhr = sbCorsRequest('GET', url + '/include/init.php' + ('lang' in parameters ? '?lang=' + parameters['lang'] : '') + ('mode' in parameters ? ('lang' in parameters ? '&' : '?') + 'mode=' + parameters['mode'] : ''));
+        xhr = sbCorsRequest('GET', url + '/connector-to-analytics.php' + ('lang' in parameters ? '?lang=' + parameters['lang'] : '') + ('mode' in parameters ? ('lang' in parameters ? '&' : '?') + 'mode=' + parameters['mode'] : ''));
         if (!xhr) {
             console.log('Support Board: Init Error - CORS not supported.');
         } else {
