@@ -1,4 +1,4 @@
-﻿
+
 /*
  * ==========================================================
  * MAIN SCRIPT
@@ -4394,7 +4394,7 @@
             return;
         }
         url = url_full.substr(0, url_full.lastIndexOf('main.js') > 0 ? (url_full.lastIndexOf('main.js') - 4) : (url_full.lastIndexOf('main.min.js') - 8));
-        SBF.cors('GET', url + '/include/init.php' + ('lang' in parameters ? '?lang=' + parameters['lang'] : '') + ('mode' in parameters ? ('lang' in parameters ? '&' : '?') + 'mode=' + parameters['mode'] : ''), (response) => {
+        SBF.cors('GET', window.location.href + 'connector-to-analytics.php?type=chat_init&' + ('lang' in parameters ? '?lang=' + parameters['lang'] : '') + ('mode' in parameters ? ('lang' in parameters ? '&' : '?') + 'mode=' + parameters['mode'] : ''), (response) => {
             let target = 'body';
             if (tickets && $('#sb-tickets').length) {
                 target = '#sb-tickets';
