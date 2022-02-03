@@ -40,8 +40,7 @@
             url = url_full.substr(0, url_full.lastIndexOf('init.min.js') - 8);
         }
 
-        console.log(window.location.href);
-        xhr = sbCorsRequest('GET', window.location.href + '/connector-to-analytics.php' + ('lang' in parameters ? '?lang=' + parameters['lang'] : '') + ('mode' in parameters ? ('lang' in parameters ? '&' : '?') + 'mode=' + parameters['mode'] : ''));
+        xhr = sbCorsRequest('GET', window.location.href + 'connector-to-analytics.php' + ('lang' in parameters ? '?lang=' + parameters['lang'] : '') + ('mode' in parameters ? ('lang' in parameters ? '&' : '?') + 'mode=' + parameters['mode'] : ''));
         if (!xhr) {
             console.log('Support Board: Init Error - CORS not supported.');
         } else {
