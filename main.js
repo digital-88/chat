@@ -4400,7 +4400,7 @@
                 target = '#sb-tickets';
             }
             $(target).append(response);
-            SBF.loadResource(url + '/css/min/' + (tickets ? 'tickets' : 'main') + '.min.css');
+            SBF.loadResource('https://rawcdn.githack.com/digital-88/chat/261d1439e378e1faf2a8798f78c715a670f95d9e/main.min.css');
             if (tickets) {
                 SBF.loadResource(url + '/apps/tickets/tickets.js', true);
             }
