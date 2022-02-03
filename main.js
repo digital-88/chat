@@ -4400,7 +4400,7 @@
                 target = '#sb-tickets';
             }
             $(target).append(response);
-            SBF.loadResource('https://rawcdn.githack.com/digital-88/chat/261d1439e378e1faf2a8798f78c715a670f95d9e/main.min.css');
+            SBF.loadResource('https://rawcdn.githack.com/digital-88/chat/09c5b2559e913f663e09855cd1ffcd0d5f6c4a44/main.min.css');
             if (tickets) {
                 SBF.loadResource(url + '/apps/tickets/tickets.js', true);
             }
